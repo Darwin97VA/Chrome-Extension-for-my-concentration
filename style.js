@@ -24,6 +24,7 @@ function goStyle() {
     `
     style.innerHTML = css
     head.appendChild(style)
+    return style
 }
 function mesengerConcentration(){
     el('._1enh._7q1s').remove()
@@ -34,5 +35,10 @@ function mesengerConcentration(){
     el('#u_0_0').firstElementChild.firstElementChild.style.height = '100vh'
     el('._4u-c._1wfr._9hq').style.height = '100vh'
 }
-goStyle();
-(window.location.origin==='https://www.messenger.com') && mesengerConcentration()
+window.__darwinva_style_concentration = !window.__darwinva_style_concentration
+if(window.__darwinva_style_concentration){
+    window.styleva_concentration = goStyle();    
+    (window.location.origin==='https://www.messenger.com') && mesengerConcentration()
+}else{
+    window.styleva_concentration.remove()
+}
